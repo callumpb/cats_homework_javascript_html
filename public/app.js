@@ -72,9 +72,10 @@ const createImageLi = function() {
   return imageLi;
 };
 
-const createImage = function(url) {
+const createImage = function(url, width) {
   const image = document.createElement('img');
   image.src = url;
+  image.width = width
   return image;
 }
 
